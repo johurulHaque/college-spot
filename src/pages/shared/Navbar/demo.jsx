@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
-// import "./Navbar.css";
+import "./Navbar.css";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -24,16 +24,16 @@ const Navbar = () => {
       </li>
       <li>
         <Link to="/admission"> Admission</Link>
-      </li>
+      </li>    
       <li>
         <Link to="/myCollege"> My College</Link>
-      </li>
+      </li>      
     </>
   );
 
   return (
     <>
-      <div className="navbar bg-black bg-opacity-50 max-w-screen-xl text-black">
+      <div className="navbar bg-black bg-opacity-50 max-w-screen-xl text-white">
         <div className="navbar-start z-10">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -54,7 +54,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-black bg-opacity-50 rounded-box w-52 text-white"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-black bg-opacity-50 rounded-box w-52"
             >
               {navOptions}
             </ul>
@@ -71,39 +71,23 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-2xl">{navOptions}</ul>
         </div>
-        <div className="flex-none gap-2">
-          <div className="form-control">
-            <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
-          </div>
+        <div className="navbar-end">
           {user ? (
             <>
-              <div className="dropdown dropdown-end">
-                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                  <div className="w-10 rounded-full">
-                    <img
-                      src={user.photoURL}
-                      referrerPolicy="no-referrer"
-                      alt=""
-                      className="w-10 h-10 rounded-full"
-                      title={user.displayName}
-                    />
-                  </div>
-                </label>
-                <ul tabIndex={0} className="mt-3 z-[2] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                  <li>
-                    <a className="justify-between">
-                      Profile                      
-                    </a>
-                  </li>
-                  <li><a>Settings</a></li>
-                  <li><a> <button
-                    onClick={handleLogOut}
-                    className="btn btn-sm btn-warning btn-outline"
-                  >
-                    LogOut <FaSignOutAlt></FaSignOutAlt>
-                  </button></a></li>
-                </ul>
-              </div>
+              <img
+                src={user.photoURL}
+                referrerPolicy="no-referrer"
+                alt=""
+                className="w-10 h-10 rounded-full"
+                title={user.displayName}
+              />
+
+              <button
+                onClick={handleLogOut}
+                className="btn btn-sm btn-warning btn-outline"
+              >
+                LogOut <FaSignOutAlt></FaSignOutAlt>
+              </button>
             </>
           ) : (
             <>
@@ -117,7 +101,6 @@ const Navbar = () => {
               </li>
             </>
           )}
-
         </div>
       </div>
     </>
@@ -125,3 +108,38 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+import React from 'react';
+
+function CollegeCard({college}) {    
+    const {name,image,admissionDate,eventsDetails,recharchesHistoryDetails,sportsDetails,rating,numOfRecherch} = college;
+    console.log(college)
+
+    return (
+        <div className="card w-96 bg-base-100 shadow-xl">
+            <figure>
+                <img src={image} alt="class image" className='w-full h-72' />
+            </figure>
+            <div className="card-body" style={{ background: (numOfRecherch) ? '' : 'red' }}>
+                <h2 className="card-title">
+                    {name}
+                    <div className="badge badge-secondary">$ {rating}</div>
+                </h2>
+                <p><span className="text-xl font-semibold">Admission Date:</span> {admissionDate}</p>
+                <div className="card-actions justify-end">
+                    <div className="badge  badge-primary badge-outline">
+                        Available {rating} seats
+                    </div>
+                    <div className="badge  badge-accent badge-outline">
+                        Total student {rating}
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default CollegeCard
