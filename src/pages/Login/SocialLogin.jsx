@@ -16,8 +16,8 @@ const SocialLogin = () => {
         googleSignIn()
             .then(result => {
                 const loggedInUser = result.user;                
-                const saveUser = { name: loggedInUser.displayName, email: loggedInUser.email,role:"user" }
-                fetch('https://sports-academy-server-delta.vercel.app/users', {
+                const saveUser = { name: loggedInUser.displayName, email: loggedInUser.email }
+                fetch('http://localhost:5000/users', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -34,8 +34,9 @@ const SocialLogin = () => {
         githubSignIn()
             .then(result => {
                 const loggedInUser = result.user;                
-                const saveUser = { name: loggedInUser.displayName, email: loggedInUser.email,role:"user" }
-                fetch('https://sports-academy-server-delta.vercel.app/users', {
+                console.log(loggedInUser)
+                const saveUser = { name: loggedInUser.displayName || "demo name", email: loggedInUser.email || "demo@gmail.com"}
+                fetch('http://localhost:5000/users', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -56,7 +57,7 @@ const SocialLogin = () => {
                 <button onClick={handleGoogleSignIn} className="btn btn-circle btn-accent btn-outline">
                     <FaGoogle></FaGoogle>
                 </button>
-                <button onClick={handleGithubSignIn} className="btn btn-circle btn-accent btn-outline">
+                <button onClick={handleGithubSignIn} className="btn ml-5 btn-circle btn-accent btn-outline">
                     <FaGithub />
                 </button>
             </div>

@@ -1,5 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
+import CollegeCardDetails from "../pages/Colleges/CollegeCardDetails";
+import CollegeList from "../pages/Colleges/CollegeList";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
 import CollegeDetails from "../pages/Home/collegeDetails";
@@ -21,8 +23,17 @@ export const router = createBrowserRouter([
           loader:()=> fetch('./college.json')
         },
         {
+          path: "/college-details/:id",
+          element: <CollegeCardDetails></CollegeCardDetails>,
+          loader:()=> fetch('./college.json')
+        },
+        {
           path: "login",
           element: <Login></Login>
+        },
+        {
+          path: "college",
+          element: <CollegeList></CollegeList>
         },
         {
           path: "register",

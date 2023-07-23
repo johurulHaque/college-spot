@@ -1,14 +1,16 @@
-import React, { useContext, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import SocialLogin from "./SocialLogin";
-import { AuthContext } from "../../providers/AuthProvider";
+import React, { useContext, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import Swal from "sweetalert2";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-// import Lottie from "react-lottie";
-// import  animateLogin from '../../assets/login.json'
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import { AuthContext } from "../../providers/AuthProvider";
+import SocialLogin from "./SocialLogin";
 
 const Login = () => {
+  const {passwordReset} = useContext(AuthContext);
+  const emailRef = useRef();
+  const [error,setError] = useState("");
+
   const {
     register,
     handleSubmit,
@@ -43,12 +45,28 @@ const Login = () => {
       navigate(from, { replace: true });
     });
   };
+
+  const handlePasswordReset = (event)=>{
+    const email = emailRef.current.value;
+    if(!email){
+      alert("Please provide your email address for password reset!")
+    }
+    passwordReset(email)
+    .then(() => {
+        alert("Please Check Your email");
+    })
+    .catch((error) => {
+      setError(error.message)
+    });
+  }
+
+
   return (
     <>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col md:flex-row-reverse">
           <div className="text-center md:w-1/2 lg:text-left ">
-            {/* <Lottie animationData={animateLogin} loop={true} /> */}            
+            {/* <Lottie animationData={animateLogin} loop={true} />             */}
             <img src="./login.jpg" alt="" />
           </div>
           <div className="card md:w-1/2 max-w-sm shadow-2xl bg-base-100">
@@ -62,6 +80,7 @@ const Login = () => {
                   {...register("email", { required: true })}
                   placeholder="email"
                   className="input input-bordered"
+                  ref={emailRef}
                 />
                 {errors.email && (
                   <span className="text-red-600">Email is required</span>
@@ -101,6 +120,12 @@ const Login = () => {
                 />
               </div>
             </form>
+            {
+              error && <p className="text-red-500">{error}</p>
+            }
+            <p className="text-end text-2xl">
+              <u><button className="btn btn-link" onClick={handlePasswordReset}>Password Reset</button></u>
+            </p>
             <p className="text-end text-2xl">
               <small>
                 New Here?{" "}

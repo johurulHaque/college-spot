@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../providers/AuthProvider";
 import SocialLogin from "../Login/SocialLogin";
-import { Helmet } from "react-helmet-async";
 const Register = () => {
   const {
     register,
@@ -32,13 +32,12 @@ const Register = () => {
         .then(() => {
           const saveUser = {
             name: data.name,
-            email: data.email,
-            role: "user",
+            email: data.email,          
             image: data.photoURL,
             number: data.number,
             address: data.address,
           };
-          fetch("https://sports-academy-server-delta.vercel.app/users", {
+          fetch("http://localhost:5000/users", {
             method: "POST",
             headers: {
               "content-type": "application/json",
@@ -71,7 +70,7 @@ const Register = () => {
   return (
     <>
       <Helmet>
-        <title>Sports Academy | Resister</title>
+        <title>College Spot | Resister</title>
       </Helmet>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
@@ -120,8 +119,8 @@ const Register = () => {
                       required: true,
                       minLength: 6,
                       maxLength: 20,
-                      pattern:
-                        /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
+                      // pattern:
+                      //   /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
                     })}
                     placeholder="password"
                     className="input input-bordered"
