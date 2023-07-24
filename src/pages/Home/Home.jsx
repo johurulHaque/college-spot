@@ -25,18 +25,21 @@ const Home = () => {
         }
       </div>
       
-      <h2 className='text-2xl md:text-2xl md:font-semibold  mt-5 text-center'>Professor's Talk</h2>
+      <h2 className='text-2xl md:text-2xl md:font-semibold  mt-10 text-center'>__Professor's Talk__</h2>
       <ProfessorTalk></ProfessorTalk>
-      <Marquee style={{ marginBottom: "25px" }} className="mt-10">
-        <img src="./toy/logo1.jpg" className="w-32 h-24" />
-        <img src="./toy/logo2.jpg" className="w-32 h-24" />
-        <img src="./toy/logo3.jpg" className="w-32 h-24" />
-        <img src="./toy/logo4.png" className="w-32 h-24" />
-        <img src="./toy/logo5.png" className="w-32 h-24" />
-        <img src="./toy/logo6.png" className="w-32 h-24" />
-        <img src="./toy/logo7.jpg" className="w-32 h-24" />
-        <img src="./toy/logo8.png" className="w-32 h-24" />
-        <img src="./toy/logo9.png" className="w-32 h-24" />
+
+      <h2 className='text-2xl md:text-2xl md:font-semibold  mt-10 text-center'>__Our Education Partner__</h2>
+      <Marquee style={{ marginBottom: "25px" }} className="mt-2">
+        <img src="./collegeLogo/logo1.png" className="w-32 h-28" />
+        <img src="./collegeLogo/logo2.jpg" className="w-32 h-28" />
+        <img src="./collegeLogo/logo3.png" className="w-32 h-28" />
+        <img src="./collegeLogo/logo4.jpg" className="w-32 h-28" />
+        <img src="./collegeLogo/logo5.jpg" className="w-32 h-28" />
+        <img src="./collegeLogo/logo6.jpg" className="w-32 h-28" />
+        <img src="./collegeLogo/logo7.jpg" className="w-32 h-28" />
+        <img src="./collegeLogo/logo8.jpg" className="w-32 h-28" />
+        <img src="./collegeLogo/logo9.jpg" className="w-32 h-28" />
+        <img src="./collegeLogo/logo10.jpg" className="w-32 h-28" />
       </Marquee>
     </div>
   )

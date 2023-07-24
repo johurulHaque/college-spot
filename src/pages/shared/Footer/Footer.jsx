@@ -1,21 +1,21 @@
 import React from "react";
 import {
-    FaFacebook,
-    FaInstagram,
-    FaMailBulk,
-    FaMapMarkerAlt,
-    FaPhone,
-    FaTwitter
+  FaFacebook,
+  FaInstagram,
+  FaMailBulk,
+  FaMapMarkerAlt,
+  FaPhone,
+  FaTwitter
 } from "react-icons/fa";
-import logo from "../../../assets/toy.png";
+import logo from "../../../assets/logo3.png";
 
 const Footer = () => {
   return (
     <footer className="footer p-10 mt-9  bg-[url('/footer.png')] h-[100%] text-base-content">
       <div>
-        <img src={logo} alt="" className="w-36" />
+        <img src={logo} alt="" className="w-24" />
         <p>
-          Toys Home Ltd.
+          College Spot Ltd.
           <br />
           <p>Copyright © 2023 - All right reserved</p>
         </p>
@@ -29,11 +29,11 @@ const Footer = () => {
       </div>
 
       <div>
-        <span className="footer-title">PRODUCT</span>
-        <a className="link link-hover">Legal Notice</a>
-        <a className="link link-hover">Delivery</a>
-        <a className="link link-hover">Prices drop</a>
-        <a className="link link-hover">New products</a>        
+        <span className="footer-title">Education</span>
+        <a className="link link-hover">College Education</a>
+        <a className="link link-hover">University Education</a>        
+        <a className="link link-hover">Education Abroad</a>
+        <a className="link link-hover">Language Club</a>        
       </div>
       <div>
         <span className="footer-title">CONTACT INFORMATION</span>
