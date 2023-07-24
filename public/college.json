@@ -1,417 +1,299 @@
 [
     {
-      "name": "XYZ College",
       "id":1,
-      "image": "https://i.ibb.co/rkSHgTH/images.jpg",
+      "name": "Harvard University",
+      "image": "https://i.ibb.co/Fw5RvyN/college.jpg",
       "admissionDate": "2023-09-15",
       "eventsDetails": [
         {
           "name": "Orientation Day",
-          "details": "An introduction to college life for new students.",
-          "image": "https://example.com/orientation-day.jpg"
+          "details": "An introduction to college life for new students.This is important and enjoy full day for the new commer.",
+          "image": "https://i.ibb.co/qFFX3dt/event1.jpg"
         },
         {
           "name": "Cultural Fest",
-          "details": "A showcase of diverse cultural performances and activities.",
-          "image": "https://example.com/cultural-fest.jpg"
+          "details": "A showcase of diverse cultural performances and activities.Different culture are mixedup together.",
+          "image": "https://i.ibb.co/WK8t3Tx/event2.png"
         },
         {
           "name": "Tech Hackathon",
           "details": "A 24-hour coding challenge for tech enthusiasts.",
-          "image": "https://example.com/tech-hackathon.jpg"
+          "image": "https://i.ibb.co/jvnjG0r/event3.jpg"
         }
       ],
       "recharchesHistoryDetails": [
         {
           "name": "Chemical Engineering",
           "details": "Research in the field of Chemical Engineering.",
-          "image": "https://example.com/chemical-engineering-research.jpg"
+          "image": "https://i.ibb.co/HNfvDHg/images.jpg"
         },
         {
           "name": "Psychology",
           "details": "Research in the field of Psychology.",
-          "image": "https://example.com/psychology-research.jpg"
+          "image": "https://i.ibb.co/sgPCxKC/download.jpg"
         },
         {
           "name": "Economics",
           "details": "Research in the field of Economics.",
-          "image": "https://example.com/economics-research.jpg"
+          "image": "https://i.ibb.co/TkQZ5Kf/download.png"
         }
       ],
       "sportsDetails": [
         {
           "name": "Cricket",
           "details": "Join the cricket team and participate in inter-college matches.",
-          "image": "https://example.com/cricket-sports.jpg"
+          "image": "https://i.ibb.co/bHyQbkj/download-1.jpg"
         },
         {
           "name": "Volleyball",
           "details": "Play volleyball with friends and compete in tournaments.",
-          "image": "https://example.com/volleyball-sports.jpg"
+          "image": "https://i.ibb.co/NT9v9tr/images-1.jpg"
         },
         {
           "name": "Athletics",
           "details": "Train for track and field events and represent the college.",
-          "image": "https://example.com/athletics-sports.jpg"
+          "image": "https://i.ibb.co/5Yg5Sh9/download-2.jpg"
         }
       ],
       "rating": 4.3,
       "numOfRecherch": 95
     },
     {
-      "name": "PQR University",
+      "name": "Stanford University",
       "id":2,
-      "image": "https://example.com/pqr-university.jpg",
+      "image": "https://i.ibb.co/L8m5gch/download-3.jpg",
       "admissionDate": "2023-08-20",
       "eventsDetails": [
         {
           "name": "Fresher's Night",
           "details": "An evening of entertainment and bonding for new students.",
-          "image": "https://example.com/freshers-night.jpg"
+          "image": "https://i.ibb.co/dbzQ03m/fresher.png"
         },
         {
           "name": "Science Fair",
           "details": "An exhibition of innovative science projects.",
-          "image": "https://example.com/science-fair.jpg"
+          "image": "https://i.ibb.co/pr9pTPK/download-1.png"
         },
         {
           "name": "Literary Fest",
           "details": "A celebration of literature and literary talent.",
-          "image": "https://example.com/literary-fest.jpg"
+          "image": "https://i.ibb.co/2ZMLTyp/download-4.jpg"
         }
       ],
       "recharchesHistoryDetails": [
         {
           "name": "Biotechnology",
           "details": "Research in the field of Biotechnology.",
-          "image": "https://example.com/biotechnology-research.jpg"
+          "image": "https://i.ibb.co/gTgD08k/download-5.jpg"
         },
         {
           "name": "History",
           "details": "Research in the field of History.",
-          "image": "https://example.com/history-research.jpg"
+          "image": "https://i.ibb.co/10s3tSt/download-6.jpg"
         },
         {
           "name": "Sociology",
           "details": "Research in the field of Sociology.",
-          "image": "https://example.com/sociology-research.jpg"
+          "image": "https://i.ibb.co/xHYpCMZ/Sociology-syllabus.png"
         }
       ],
       "sportsDetails": [
         {
           "name": "Football",
           "details": "Join the football team and compete in university-level matches.",
-          "image": "https://example.com/university-football.jpg"
+          "image": "https://i.ibb.co/xCX4wYx/download-7.jpg"
         },
         {
           "name": "Table Tennis",
           "details": "Enjoy playing table tennis with fellow students in the campus.",
-          "image": "https://example.com/table-tennis.jpg"
+          "image": "https://i.ibb.co/hg80Jv9/download-8.jpg"
         },
         {
           "name": "Chess",
           "details": "Participate in chess tournaments and enhance strategic thinking.",
-          "image": "https://example.com/chess-sports.jpg"
+          "image": "https://i.ibb.co/ZM4R4cP/download-9.jpg"
         }
       ],
       "rating": 4.6,
       "numOfRecherch": 110
     },
         {
-          "name": "ABC College",
+          "name": "Yale University",
           "id":3,
-          "image": "https://example.com/abc-college.jpg",
+          "image": "https://i.ibb.co/JmSV347/download-10.jpg",
           "admissionDate": "2023-09-01",
           "eventsDetails": [
             {
               "name": "Freshers Party",
               "details": "A fun-filled event to welcome new students.",
-              "image": "https://example.com/freshers-party.jpg"
+              "image": "https://i.ibb.co/2MgSbLr/download-11.jpg"
             },
             {
               "name": "Annual Fest",
               "details": "A grand celebration with music, dance, and games.",
-              "image": "https://example.com/annual-fest.jpg"
+              "image": "https://i.ibb.co/RDSfhWW/download-12.jpg"
             },
             {
               "name": "Tech Symposium",
               "details": "A platform for showcasing technological innovations.",
-              "image": "https://example.com/tech-symposium.jpg"
+              "image": "https://i.ibb.co/qgCqMgn/download-13.jpg"
             }
           ],
           "recharchesHistoryDetails": [
             {
               "name": "Physics",
               "details": "Research in the field of Physics.",
-              "image": "https://example.com/physics-research.jpg"
+              "image": "https://i.ibb.co/7ts5L9D/download-14.jpg"
             },
             {
               "name": "Biology",
               "details": "Research in the field of Biology.",
-              "image": "https://example.com/biology-research.jpg"
+              "image": "https://i.ibb.co/7zGGb3M/download-15.jpg"
             },
             {
               "name": "Computer Science",
               "details": "Research in the field of Computer Science.",
-              "image": "https://example.com/computer-science-research.jpg"
+              "image": "https://i.ibb.co/25dPvgV/My-IC-Article-89683.jpg"
             }
           ],
           "sportsDetails": [
             {
               "name": "Football",
               "details": "Join the football team and play competitive matches.",
-              "image": "https://example.com/football-sports.jpg"
+              "image": "https://i.ibb.co/xCX4wYx/download-7.jpg"
             },
             {
               "name": "Basketball",
               "details": "Play basketball and participate in college tournaments.",
-              "image": "https://example.com/basketball-sports.jpg"
+              "image": "https://i.ibb.co/NT9v9tr/images-1.jpg"
             },
             {
               "name": "Badminton",
               "details": "Enjoy playing badminton in the college sports complex.",
-              "image": "https://example.com/badminton-sports.jpg"
+              "image": "https://i.ibb.co/c3tyfwP/images-3.jpg"
             }
           ],
           "rating": 4.5,
           "numOfRecherch": 120
         },
         {
-          "name": "XYZ University",
+          "name": "Princeton University",
           "id":4,
-          "image": "https://example.com/xyz-university.jpg",
+          "image": "https://i.ibb.co/vh73Lqn/download-16.jpg",
           "admissionDate": "2023-08-15",
           "eventsDetails": [
             {
               "name": "Cultural Night",
               "details": "A showcase of diverse cultural performances.",
-              "image": "https://example.com/cultural-night.jpg"
+              "image": "https://i.ibb.co/RDSfhWW/download-12.jpg"
             },
             {
               "name": "Sports Meet",
               "details": "An event where students compete in various sports.",
-              "image": "https://example.com/sports-meet.jpg"
+              "image": "https://i.ibb.co/Np20RSn/sp.jpg"
             },
             {
               "name": "Science Expo",
               "details": "Exhibition of scientific projects and innovations.",
-              "image": "https://example.com/science-expo.jpg"
+              "image": "https://i.ibb.co/88kmW5X/download.png"
             }
           ],
           "recharchesHistoryDetails": [
             {
               "name": "Chemistry",
               "details": "Research in the field of Chemistry.",
-              "image": "https://example.com/chemistry-research.jpg"
+              "image": "https://i.ibb.co/HNfvDHg/images.jpg"
             },
             {
               "name": "Mathematics",
               "details": "Research in the field of Mathematics.",
-              "image": "https://example.com/mathematics-research.jpg"
+              "image": "https://i.ibb.co/R2hqzBC/download.jpg"
             },
             {
               "name": "Environmental Science",
               "details": "Research in the field of Environmental Science.",
-              "image": "https://example.com/environmental-science-research.jpg"
+              "image": "https://i.ibb.co/xMvZkYz/download-1.jpg"
             }
           ],
           "sportsDetails": [
             {
               "name": "Cricket",
               "details": "Join the cricket team and participate in tournaments.",
-              "image": "https://example.com/cricket-sports.jpg"
+              "image": "https://i.ibb.co/bHyQbkj/download-1.jpg"
             },
             {
               "name": "Tennis",
               "details": "Play tennis with fellow students in college courts.",
-              "image": "https://example.com/tennis-sports.jpg"
+              "image": "https://i.ibb.co/N7Bbkdc/download-2.jpg"
             },
             {
               "name": "Swimming",
               "details": "Enjoy swimming sessions in the college pool.",
-              "image": "https://example.com/swimming-sports.jpg"
+              "image": "https://i.ibb.co/hfyff5g/download-3.jpg"
             }
           ],
           "rating": 4.2,
           "numOfRecherch": 90
         },
         {
-            "name": "Harvard University",
+            "name": "Columbia University",
             "id":5,
-            "image": "https://example.com/harvard-university.jpg",
+            "image": "https://i.ibb.co/QKRwc4y/Morningside-Campus-at-Dusk-2.jpg",
             "admissionDate": "2023-09-05",
             "eventsDetails": [
               {
                 "name": "Freshman Convocation",
                 "details": "A formal welcoming ceremony for incoming students.",
-                "image": "https://example.com/freshman-convocation.jpg"
+                "image": "https://i.ibb.co/JrdcQ6h/convocation-students-web.jpg"
               },
               {
                 "name": "Harvard-Yale Football Game",
                 "details": "An annual football rivalry between Harvard and Yale.",
-                "image": "https://example.com/harvard-yale-football.jpg"
+                "image": "https://i.ibb.co/pvqq7dm/download.jpg"
               },
               {
                 "name": "Nobel Laureate Lecture",
                 "details": "Lecture series featuring Nobel Prize winners.",
-                "image": "https://example.com/nobel-lecture.jpg"
+                "image": "https://i.ibb.co/QDwHwws/images.jpg"
               }
             ],
             "recharchesHistoryDetails": [
               {
                 "name": "Biomedical Engineering",
                 "details": "Research in the field of Biomedical Engineering.",
-                "image": "https://example.com/biomedical-engineering-research.jpg"
+                "image": "https://i.ibb.co/gZZ8S3R/download-1.jpg"
               },
               {
                 "name": "Law",
                 "details": "Research in the field of Law and Legal Studies.",
-                "image": "https://example.com/law-research.jpg"
+                "image": "https://i.ibb.co/7zm8ZDQ/download-2.jpg"
               },
               {
                 "name": "Economics",
                 "details": "Research in the field of Economics.",
-                "image": "https://example.com/harvard-economics-research.jpg"
+                "image": "https://i.ibb.co/16377Bh/What-is-Economics-1024x576.jpg"
               }
             ],
             "sportsDetails": [
               {
                 "name": "Soccer",
                 "details": "Join the soccer team and represent Harvard in intercollegiate games.",
-                "image": "https://example.com/harvard-soccer.jpg"
+                "image": "https://i.ibb.co/fHxRZYf/download-3.jpg"
               },
               {
                 "name": "Swimming",
                 "details": "Train with the varsity swim team and compete in swimming meets.",
-                "image": "https://example.com/harvard-swimming.jpg"
+                "image": "https://i.ibb.co/3T2Jp13/download-4.jpg"
               },
               {
                 "name": "Tennis",
                 "details": "Play tennis with fellow students on Harvard's tennis courts.",
-                "image": "https://example.com/harvard-tennis.jpg"
+                "image": "https://i.ibb.co/hg80Jv9/download-8.jpg"
               }
             ],
             "rating": 4.8,
             "numOfRecherch": 180
-          },
-          {
-            "name": "Dhaka College",
-            "id":6,
-            "image": "https://example.com/dhaka-college.jpg",
-            "admissionDate": "2023-08-10",
-            "eventsDetails": [
-              {
-                "name": "Freshers Welcome",
-                "details": "A warm welcome for new students with cultural performances.",
-                "image": "https://example.com/dhaka-freshers-welcome.jpg"
-              },
-              {
-                "name": "Science Fair",
-                "details": "An exhibition of innovative science projects.",
-                "image": "https://example.com/dhaka-science-fair.jpg"
-              },
-              {
-                "name": "Literary Symposium",
-                "details": "A symposium to discuss literature and literary works.",
-                "image": "https://example.com/dhaka-literary-symposium.jpg"
-              }
-            ],
-            "recharchesHistoryDetails": [
-              {
-                "name": "Chemistry",
-                "details": "Research in the field of Chemistry.",
-                "image": "https://example.com/dhaka-chemistry-research.jpg"
-              },
-              {
-                "name": "History",
-                "details": "Research in the field of History.",
-                "image": "https://example.com/dhaka-history-research.jpg"
-              },
-              {
-                "name": "Economics",
-                "details": "Research in the field of Economics.",
-                "image": "https://example.com/dhaka-economics-research.jpg"
-              }
-            ],
-            "sportsDetails": [
-              {
-                "name": "Cricket",
-                "details": "Join the cricket team and compete in intercollegiate tournaments.",
-                "image": "https://example.com/dhaka-cricket.jpg"
-              },
-              {
-                "name": "Football",
-                "details": "Participate in football matches and showcase your skills.",
-                "image": "https://example.com/dhaka-football.jpg"
-              },
-              {
-                "name": "Debate Club",
-                "details": "Join the debate club and enhance your public speaking abilities.",
-                "image": "https://example.com/dhaka-debate.jpg"
-              }
-            ],
-            "rating": 4.4,
-            "numOfRecherch": 70
-          },
-          {
-            "name": "Malaysia College",
-            "id":7,
-            "image": "https://example.com/malaysia-college.jpg",
-            "admissionDate": "2023-09-20",
-            "eventsDetails": [
-              {
-                "name": "Orientation Day",
-                "details": "An introduction to college life for new students.",
-                "image": "https://example.com/malaysia-orientation-day.jpg"
-              },
-              {
-                "name": "Cultural Festival",
-                "details": "A celebration of Malaysia's diverse culture and traditions.",
-                "image": "https://example.com/malaysia-cultural-festival.jpg"
-              },
-              {
-                "name": "Tech Expo",
-                "details": "Exhibition of technology projects and innovations.",
-                "image": "https://example.com/malaysia-tech-expo.jpg"
-              }
-            ],
-            "recharchesHistoryDetails": [
-              {
-                "name": "Computer Science",
-                "details": "Research in the field of Computer Science.",
-                "image": "https://example.com/malaysia-computer-science-research.jpg"
-              },
-              {
-                "name": "Environmental Studies",
-                "details": "Research in the field of Environmental Studies.",
-                "image": "https://example.com/malaysia-environmental-research.jpg"
-              },
-              {
-                "name": "Business Management",
-                "details": "Research in the field of Business Management.",
-                "image": "https://example.com/malaysia-business-management-research.jpg"
-              }
-            ],
-            "sportsDetails": [
-              {
-                "name": "Football",
-                "details": "Join the college football team and compete in intercollegiate tournaments.",
-                "image": "https://example.com/malaysia-football.jpg"
-              },
-              {
-                "name": "Badminton",
-                "details": "Play badminton with fellow students and improve your skills.",
-                "image": "https://example.com/malaysia-badminton.jpg"
-              },
-              {
-                "name": "Debate Club",
-                "details": "Join the debate club and enhance your public speaking abilities.",
-                "image": "https://example.com/malaysia-debate-club.jpg"
-              }
-            ],
-            "rating": 4.6,
-            "numOfRecherch": 100
-          }
+          }         
       
       ]
       

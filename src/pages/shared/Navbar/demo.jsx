@@ -173,3 +173,31 @@ export default CollegeCard
 
 </div>
 </div>
+
+
+<div className="bg-white p-4 rounded-md shadow-md mb-4">
+<h2 className="text-2xl font-semibold mb-2">Research Works</h2>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 mt-2  md:mt-4">
+    {
+        recharchesHistoryDetails.map(recharche => <>
+            <div className="card w-96 bg-base-100 shadow-xl">
+                <figure>
+                    <img src={recharche.image} alt="className image" className='w-full h-72' />
+                </figure>
+                <div className="card-body">
+                    <h2 className="card-title">
+                        {recharche.name}
+                        {/* <div className="badge badge-secondary">$ {rating}</div> */}
+                    </h2>
+                    <p><span className="text-xl font-semibold">Details: </span><span> {recharche.details}</span></p>
+
+                    <div>
+                    </div>
+                </div>
+            </div>
+
+        </>)
+    }
+
+</div>
+</div>

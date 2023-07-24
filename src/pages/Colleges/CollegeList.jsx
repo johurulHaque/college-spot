@@ -14,7 +14,7 @@ const CollegeList = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 mt-2  md:mt-4">
             {
-                colleges?.slice(0, 3)?.map((college, idx) => <CollegeListCard key={idx} college={college}></CollegeListCard>)
+                colleges?.slice(0, 6)?.map((college, idx) => <CollegeListCard key={idx} college={college}></CollegeListCard>)
             }
         </div>
 
