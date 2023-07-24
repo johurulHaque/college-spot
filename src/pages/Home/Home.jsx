@@ -18,6 +18,14 @@ const Home = () => {
   return (
     <div>
       <Slider></Slider>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 mt-2  md:mt-4">
+        {
+          colleges?.slice(0, 3)?.map((college, idx) => <CollegeCard key={idx} college={college}></CollegeCard>)
+        }
+      </div>
+      
+      <h2 className='text-2xl md:text-2xl md:font-semibold  mt-5 text-center'>Professor's Talk</h2>
       <ProfessorTalk></ProfessorTalk>
       <Marquee style={{ marginBottom: "25px" }} className="mt-10">
         <img src="./toy/logo1.jpg" className="w-32 h-24" />
@@ -30,11 +38,6 @@ const Home = () => {
         <img src="./toy/logo8.png" className="w-32 h-24" />
         <img src="./toy/logo9.png" className="w-32 h-24" />
       </Marquee>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 mt-2  md:mt-4">
-        {
-          colleges?.slice(0, 3)?.map((college, idx) => <CollegeCard key={idx} college={college}></CollegeCard>)
-        }
-      </div>
     </div>
   )
 }

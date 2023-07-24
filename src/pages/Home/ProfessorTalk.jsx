@@ -8,11 +8,7 @@ const ProfessorTalk = () => {
         <div className="card-body">
           <h2 className="card-title">Celebrating a Joyful Toy Marketplace!</h2>
           <p className="text-gray-600">
-            <FaQuoteLeft className="text-[#09ccd0]"></FaQuoteLeft>I couldn't
-            wait to express my sheer delight and appreciation for the incredible
-            experience I've had shopping on your toy marketplace. From the very
-            first moment I landed on your platform, I knew I had found something
-            special.
+            <FaQuoteLeft className="text-[#09ccd0]"></FaQuoteLeft>Master the art of study with effective techniques and strategies for academic excellence. Learn beyond memorization, embracing critical thinking to understand and retain information.
             <FaQuoteRight className="text-[#09ccd0]"></FaQuoteRight>
           </p>
         </div>
@@ -22,10 +18,7 @@ const ProfessorTalk = () => {
           <h2 className="card-title">Most incredible toy places in here!</h2>
           <p className="text-gray-600">
             <FaQuoteLeft className="text-[#09ccd0]"></FaQuoteLeft>
-            Your curated selection of toys is nothing short of extraordinary.
-            From the hottest brands to hidden treasures, you have carefully
-            crafted a collection that sparks curiosity and wonder in children of
-            all ages.
+            Balance academics and life with efficient time management skills. Cultivate a passion for learning and turn setbacks into stepping stones towards success in your study journey.
             <FaQuoteRight className="text-[#09ccd0]"></FaQuoteRight>
           </p>
         </div>
@@ -35,11 +28,7 @@ const ProfessorTalk = () => {
           <h2 className="card-title">Place to choose joyful for kids!</h2>
           <p className="text-gray-600">
             <FaQuoteLeft className="text-[#09ccd0]"></FaQuoteLeft>
-            What truly sets you apart is your unwavering commitment to quality
-            and safety. As a parent, it brings me immense peace of mind to know
-            that each toy undergoes rigorous testing to meet the highest
-            standards. I can confidently choose toys that not only bring joy but
-            also prioritize the well-being of my children.
+            Unlock your learning potential with insights into how the brain absorbs and retains knowledge. Explore the power of persistence, staying motivated to overcome challenges and achieve your academic goals.
             <FaQuoteRight className="text-[#09ccd0]"></FaQuoteRight>
           </p>
         </div>
