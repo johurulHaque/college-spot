@@ -89,14 +89,15 @@ const Navbar = () => {
                     />
                   </div>
                 </label>
-                <ul tabIndex={0} className="mt-3 z-[2] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                <ul tabIndex={0} className="mt-3 z-[2] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 font-semibold">
                   <li>
-                    <a className="justify-between">
-                      Profile                      
-                    </a>
-                  </li>
-                  <li><a>Settings</a></li>
-                  <li><a> <button
+                    <Link to="/profile">
+                      <a className="justify-between">
+                        {user ? user.displayName : "no user name"}
+                      </a>
+                    </Link>
+                  </li>                  
+                  <li><a><button
                     onClick={handleLogOut}
                     className="btn btn-sm btn-warning btn-outline"
                   >
